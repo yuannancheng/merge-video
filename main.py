@@ -18,8 +18,8 @@ def main():
     video_file_types = [('常用视频格式', ['*.mp4', '*.wmv', '*.m4v', '*.avi', '*.mkv', '*.flv'])]
     audio_file_types = [('常用音频格式', ['*.mp3', '*.m4a', '*.wav', '*.wma', '*.acc', '*.ogg'])]
 
-    video_files = filedialog.askopenfilenames(title='选择视频文件', filetypes=video_file_types)
-    audio_files = filedialog.askopenfilenames(title='选择音频文件', filetypes=audio_file_types)
+    video_files = filedialog.askopenfilenames(title='选择视频文件', filetypes=video_file_types, initialdir='.')
+    audio_files = filedialog.askopenfilenames(title='选择音频文件', filetypes=audio_file_types, initialdir='.')
 
     video_file_names = {}
     audio_file_names = {}
